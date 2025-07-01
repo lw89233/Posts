@@ -93,11 +93,10 @@ public class Posts {
 
                         if (rowsAffected > 0) {
                             response += "status:200#";
-                            return response;
                         } else {
                             response += "status:400#";
-                            return response;
                         }
+                        return response;
                     }
                 }
             } catch (SQLException e) {
