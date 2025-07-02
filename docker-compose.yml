@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  posts:
+    build: .
+    image: posts:latest
+    container_name: posts-service
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "${POSTS_MICROSERVICE_PORT}:${POSTS_MICROSERVICE_PORT}"
