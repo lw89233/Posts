@@ -1,7 +1,6 @@
 services:
   posts:
-    build: .
-    image: posts:latest
+    image: lw89233/posts:latest
     container_name: posts-service
     restart: unless-stopped
     env_file:
